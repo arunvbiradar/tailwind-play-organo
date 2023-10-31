@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div
+    class="w-full min-h-screen font-sans text-gray-900 bg-gradient-to-br from-transparent to-green-100" id="mainDiv"
+  >
+    <nav
+      class="flex justify-between items-center py-8 px-6 mx-auto max-w-screen-xl md:px-12 lg:px-16 xl:px-24"
+    >
+      <a href="#" class="text-3xl md:text-4xl font-bold tracking-wide">
+        Organ<span class="text-green">o</span>
+      </a>
+      <div
+        id="headerDiv"
+        class="inset-0 transition-all bg-white/70 backdrop-blur-xl z-20 md:static md:bg-transparent md:flex items-center justify-center space-y-8 md:space-y-0 md:space-x-8 flex-col md:flex-row lg:space-x-14 hidden">
+        <ul class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 lg:md:-x-8">
+          <li class="text-lg md:text-base lg:text-lg font-medium group text-green"><a href="#">Home</a>
+            <div
+              class="h-0.5 bg-green scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out">
+            </div>
+          </li>
+          <li class="text-lg md:text-base lg:text-lg font-medium group"><a href="#">Delivery</a>
+            <div
+              class="h-0.5 bg-green scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out">
+            </div>
+          </li>
+          <li class="text-lg md:text-base lg:text-lg font-medium group"><a href="#">Pricing</a>
+            <div
+              class="h-0.5 bg-green scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out">
+            </div>
+          </li>
+          <li class="text-lg md:text-base lg:text-lg font-medium group"><a href="#">FAQs</a>
+            <div
+              class="h-0.5 bg-green scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out">
+            </div>
+          </li>
+          <li class="text-lg md:text-base lg:text-lg font-medium group"><a href="#">Contact</a>
+            <div
+              class="h-0.5 bg-green scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out">
+            </div>
+          </li>
+        </ul>
+        <button
+          class="flex justify-center items-center h-13 px-7 font-medium text-white bg-green rounded-xl hover:shadow-primary transition-shadow duration-300 whitespace-nowrap">
+          Get started </button>
+      </div>
+      <button class="block md:hidden relative z-30" onclick="openMobileMenu()"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="w-8 h-8 fill-current text-gray-900">
+          <rect x="4" y="6" width="7" height="2" rx="1"></rect>
+          <rect x="13" y="16" width="7" height="2" rx="1"></rect>
+          <rect x="4" y="11" width="16" height="2" rx="1"></rect>
+        </svg></button>
+    </nav>
+
+    <div
+      class="flex flex-wrap-reverse gap-y-24 justify-between py-12 px-6 mx-auto max-w-screen-xl sm:px-8 md:px-12 lg:px-16 xl:px-24"
+    >
+      <div class="relative z-10 md:w-1/2 w-full">
+        <img
+          class="absolute top-0 right-0 md:-top-4 md:-right-8 w-24 h-auto"
+          src="/img/leaf.png"
+          alt=""
+        />
+        <span class="flex items-center px-1 text-xl text-green">
+          <span class="font-medium">100% Organic food</span>
+          <img class="w-auto h-8" src="/img/vegetable.png" alt="" />
+        </span>
+        <h1
+          class="pt-4 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight whitespace-nowrap"
+        >
+          Healthy Lifestyle <br />
+          is your only <br />
+          <span class="whitespace-nowrap text-green"> unfair advantage </span>
+        </h1>
+        <p class="pt-8 sm:text-lg max-w-md font-normal text-gray-600 leading-relaxed">
+          Choose healthy habits with Organo daily meal prepared by our expert nutritionist
+          and chef
+        </p>
+        <div class="flex pt-8 space-x-4 sm:space-x-6">
+          <button
+            class="flex justify-center items-center w-full sm:w-auto h-13 px-8 bg-green font-medium text-white rounded-xl whitespace-nowrap hover:shadow-primary transition-shadow duration-300"
+          >
+            Get started
+          </button>
+          <button
+            class="flex justify-center items-center w-full sm:w-auto h-13 px-8 font-medium text-gray-900 border border-gray-900 rounded-xl whitespace-nowrap hover:shadow-xl transition-shadow duration-300"
+          >
+            Explore menu
+          </button>
+        </div>
+        <div class="flex pt-20">
+          <img class="w-24" src="/img/chef.png" alt="" />
+          <div class="pt-5 pl-3">
+            <div class="text-xl font-bold leading-relaxed">Chef of the month</div>
+            <div class="inline-flex text-gray-600 leading-relaxed">
+              People loved his 🍳
+            </div>
+            <div class="font-bold text-green leading-relaxed">80+ famous dishes</div>
+          </div>
+        </div>
+        <div>
+          <div class="flex md:hidden pt-8 justify-end space-x-1 font-bold">
+            <span>Powered by</span><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-900 fill-current">
+              <path
+                d="M23 12.08c0 1.053-1.69 1.825-1.997 2.775-.319.985.586 2.606-.008 3.426-.6.828-2.418.461-3.242 1.064-.816.597-1.027 2.45-2.008 2.77-.946.308-2.197-1.056-3.245-1.056s-2.3 1.364-3.245 1.055c-.98-.32-1.192-2.172-2.008-2.77-.824-.602-2.642-.235-3.242-1.063-.594-.82.31-2.44-.008-3.426C3.69 13.905 2 13.133 2 12.08s1.69-1.825 1.997-2.776c.319-.984-.586-2.605.008-3.425.6-.828 2.418-.461 3.242-1.064.816-.597 1.027-2.45 2.008-2.77.946-.308 2.197 1.056 3.245 1.056s2.3-1.364 3.245-1.055c.98.32 1.192 2.172 2.008 2.77.824.602 2.642.235 3.242 1.063.594.82-.31 2.44.008 3.426.307.95 1.997 1.722 1.997 2.775Z">
+              </path>
+              <path
+                d="m12.537 6.885-3.022 5.69a.411.411 0 0 0 .36.604h1.59a.41.41 0 0 1 .41.41v3.418c0 .423.56.57.768.201l3.155-5.636a.411.411 0 0 0-.357-.61l-1.723-.003a.41.41 0 0 1-.41-.41V7.078c.002-.428-.57-.57-.77-.193Z"
+                fill="#fff"></path>
+            </svg>
+            <span>Fueler</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative md:w-1/2 w-full flex flex-col justify-between">
+        <img
+          class="w-96 lg:w-full drop-shadow-2xl self-center lg:self-end"
+          src="/img/dish.png"
+          alt=""
+        />
+        <div
+          class="absolute right-0 lg:-right-6 top-0 lg:top-28 flex flex-col py-5 px-7 rounded-2xl shadow-xl bg-white/80 backdrop-blur-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+        >
+          <div class="flex -space-x-3">
+            <div class="w-13 h-13 rounded-full border-4 border-white object-cover overflow-hidden"><img src="/img/avatar-1.jpeg"
+                alt=""></div>
+            <div class="w-13 h-13 rounded-full border-4 border-white object-cover overflow-hidden"><img src="/img/avatar-2.jpeg"
+                alt=""></div>
+            <div class="w-13 h-13 rounded-full border-4 border-white object-cover overflow-hidden"><img src="/img/avatar-3.jpeg"
+                alt=""></div>
+          </div>
+          <div class="pt-3 font-bold">Happy customers</div>
+          <div class="flex items-center text-gray-600 leading-relaxed">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+              <path d="M8.114.9 9.8 6.092h5.459L10.843 9.3l1.687 5.191-4.416-3.208-4.417 3.208 1.687-5.191L.968 6.09h5.459L8.114.9Z"
+                fill="#FBC402"></path>
+            </svg>
+            <span class="pl-1">4.9 (+2.5k Ratings)</span>
+          </div>
+        </div>
+        <div
+          class="absolute left-0 bottom-0 md:bottom-32 lg:bottom-16 flex bg-white/80 rounded-2xl shadow-xl backdrop-blur-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+        >
+          <img class="w-auto h-20 self-end" src="/img/driver.png" alt="" />
+          <div class="pr-7 pl-2 py-5">
+            <div class="font-bold">Fast delivery</div>
+            <div class="text-gray-600 leading-relaxed">30 mins delivery 🚀</div>
+          </div>
+        </div>
+        <div class="hidden md:flex justify-end space-x-1 font-bold">
+          <span>Powered by</span>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-900 fill-current">
+            <path
+              d="M23 12.08c0 1.053-1.69 1.825-1.997 2.775-.319.985.586 2.606-.008 3.426-.6.828-2.418.461-3.242 1.064-.816.597-1.027 2.45-2.008 2.77-.946.308-2.197-1.056-3.245-1.056s-2.3 1.364-3.245 1.055c-.98-.32-1.192-2.172-2.008-2.77-.824-.602-2.642-.235-3.242-1.063-.594-.82.31-2.44-.008-3.426C3.69 13.905 2 13.133 2 12.08s1.69-1.825 1.997-2.776c.319-.984-.586-2.605.008-3.425.6-.828 2.418-.461 3.242-1.064.816-.597 1.027-2.45 2.008-2.77.946-.308 2.197 1.056 3.245 1.056s2.3-1.364 3.245-1.055c.98.32 1.192 2.172 2.008 2.77.824.602 2.642.235 3.242 1.063.594.82-.31 2.44.008 3.426.307.95 1.997 1.722 1.997 2.775Z">
+            </path>
+            <path
+              d="m12.537 6.885-3.022 5.69a.411.411 0 0 0 .36.604h1.59a.41.41 0 0 1 .41.41v3.418c0 .423.56.57.768.201l3.155-5.636a.411.411 0 0 0-.357-.61l-1.723-.003a.41.41 0 0 1-.41-.41V7.078c.002-.428-.57-.57-.77-.193Z"
+              fill="#fff"></path>
+          </svg>
+          <span>Fueler</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  tailwind.config = {
+    darkMode: false, // or 'media' or 'class'
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['DM Sans', 'sans-serif']
+        },
+        colors: {
+          green: {
+            DEFAULT: '#71B214'
+          },
+          gray: {
+            600: '#606060'
+          }
+        },
+        spacing: {
+          13: '3.25rem',
+        },
+        boxShadow: {
+          primary: '0px 9.9px 21.6px rgba(136, 202, 41, 0.41)'
+        }
+      },
+    },
+    variants: {
+      extend: {},
+    },
+    plugins: [],
+  }
+
+  // header
+  function openMobileMenu() {
+    var mainDiv = document.getElementById("mainDiv");
+    mainDiv.classList.toggle("overflow-hidden");
+    mainDiv.classList.toggle('h-screen');
+
+    var headerDiv = document.getElementById("headerDiv");
+    headerDiv.classList.toggle("hidden");
+    headerDiv.classList.toggle("fixed");
+    headerDiv.classList.toggle('flex');
+  }
+</script>
+</body>
+
+</html>
